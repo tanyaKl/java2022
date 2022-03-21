@@ -17,24 +17,24 @@ public class Lesson15 {
          *
          * */
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-//        LinkedList<String> phones = new LinkedList<>();
-//        phones.add("+375291111111");
-//        phones.add("+375292222222");
-//        phones.add("+375293333333");
-//
-//        System.out.println("Введите 3 номер телефона");
-//        List<String> newPhones = new ArrayList<>();
-//        for (int i = 0; i < 3; i++) {
-//            newPhones.add(reader.readLine());
-//            if (phones.get(i).equals("4444")) {
-//                phones.remove(phones.get(i));
-//            }
-//        }
-//        phones.addAll(newPhones);
-//        String userPhone = "4444";
-//        phones.removeIf(x -> x.equals(userPhone));
-//        System.out.println(phones);
-//
+        LinkedList<String> phones = new LinkedList<>();
+        phones.add("+375291111111");
+        phones.add("+375292222222");
+        phones.add("+375293333333");
+
+        System.out.println("Введите 3 номер телефона");
+        List<String> newPhones = new ArrayList<>();
+        for (int i = 0; i < 3; i++) {
+            newPhones.add(reader.readLine());
+            if (phones.get(i).equals("4444")) {
+                phones.remove(phones.get(i));
+            }
+        }
+        phones.addAll(newPhones);
+        String userPhone = "4444";
+        phones.removeIf(x -> x.equals(userPhone));
+        System.out.println(phones);
+
 
         List<String> ph = new ArrayList<>();
         ph.add("111");
